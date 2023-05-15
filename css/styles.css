@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 5rem 3rem 5rem;
+}
+
+header h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    gap: 2rem;
+}
+
+header nav ul li{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* SECCION-UNO */
+
+.perfil{
+    
+    height: 500px;
+    background-image: url("../img/fondo-tres.jpg");
+    background-position:top ;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    padding-inline: 5rem;
+    text-align: end;
+    gap: 2rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.perfil-uno{
+    display: flex;
+    flex-direction: column;
+    align-items: end end;
+    gap: 2rem;
+    
+}
+
+.perfil-uno h2{
+    font-size: 2.3rem;
+}
+
+.perfil-dos{
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+
+.boton-perfil{
+    background-color: black;
+    padding: 0.5rem;
+    padding-inline: 1rem;
+    border-radius: 2rem;
+}
+
+.seccion-uno h4{
+    padding: 5rem;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-p{
+    display: flex;
+    padding-inline: 5rem;
+    gap: 2rem;
+    text-align: left;
+}
+
+.seccion-dos h4{
+    padding: 5rem;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imagen{
+   max-width: 100%;
+   width: 250px;
+   height: 180px;
+}
+
+.servicios{
+    display: flex;
+    padding: 4rem;
+    padding-top: 0;
+    gap: 2rem;
+}
+
+.servicio{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+   
+}
+
+.seccion-dos .servicios .servicio p{
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
