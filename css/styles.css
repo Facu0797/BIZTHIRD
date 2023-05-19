@@ -120,7 +120,6 @@ header nav ul li{
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-   
 }
 
 .seccion-dos .servicios .servicio p{
@@ -136,7 +135,7 @@ header nav ul li{
 
                 /* PERFIL */
 
-@media screen and (max-width:570px){
+@media screen and (max-width:550px){
     header{
         display: flex;
         flex-direction: column;
@@ -196,8 +195,8 @@ header nav ul li{
     }
 
     .seccion-dos .servicios .servicio img{
-        width: 300px;
-        height: 200px;
+        width: 350px;
+        height: 250px;
     }
 
     
