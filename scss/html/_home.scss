@@ -81,10 +81,15 @@ main{
         }
     }
     .seccion-services{
+        background-color: $color-secundario;
+        margin-top: 5rem;
+
         h4{
             padding: 5rem;
             font-size: 1.4rem;
             font-family: 'Montserrat', sans-serif;
+            color: $color-primario;
+            
         }
         .servicios{
             display: flex;
@@ -101,18 +106,24 @@ main{
                     max-width: 100%;
                     width: 250px;
                     height: 180px;
+
                  }
                  p{
-                    text-align: left;
+                    text-align: center;
+                    color: $color-primario;
                 }
             }
         }
     }
-    .seccion-contact-us{
-        h4{
-            font-family: 'Montserrat', sans-serif;
-            padding: 5rem;
-            font-size: 1.4rem;
+    .seccion-footer{
+        display: flex;
+        justify-content: space-around;
+        background-color: $color-primario;
+        padding: 2rem;
+
+        .icon{
+            font-size: 2rem;
+            color: $color-secundario;
         }
     }
 }
