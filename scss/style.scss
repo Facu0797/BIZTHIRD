@@ -6,9 +6,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 // import archivos secundarios:
 @import "./utilidades/variables";
+
 @import "./html/home";
+@import "./scss/html/quienes-somos";
+@import "./html/servicios";
+@import "./html/contactanos";
+
 @import "./utilidades/mq";

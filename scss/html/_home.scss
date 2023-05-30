@@ -21,6 +21,9 @@
                 gap: 2rem;
                 li{
                     font-family: 'Montserrat', sans-serif;
+                    a{
+                        text-decoration: none;
+                    }
                 }
             }
         }
@@ -30,7 +33,7 @@
 /* MAIN */
 
 main{
-    .perfil{
+    .seccion-home{
         height: 500px;
         background-image: url("../img/fondo-tres.jpg");
         background-position:top ;
@@ -41,9 +44,9 @@ main{
         padding-inline: 5rem;
         text-align: end;
         gap: 2rem;
-        color: $color-texto;
+        color: $color-primario;
         font-family: 'Montserrat', sans-serif;
-        .perfil-uno{
+        .a-template{
             display: flex;
             flex-direction: column;
             align-items: end;
@@ -52,19 +55,19 @@ main{
                 font-size: 2.3rem;
             }
         }
-        .perfil-dos{
+        .botones-home{
             display: flex;
             justify-content: end;
             gap: 5px;
-            .boton-perfil{
-                background-color: $color-botones;
+            .btn-home{
+                background-color: $color-secundario;
                 padding: 0.5rem;
                 padding-inline: 1rem;
                 border-radius: 2rem;
             }
         }
     }
-    .seccion-uno{
+    .seccion-about{
         .about{
             padding: 5rem;
             font-size: 1.4rem;
@@ -77,7 +80,7 @@ main{
             text-align: left;
         }
     }
-    .seccion-dos{
+    .seccion-services{
         h4{
             padding: 5rem;
             font-size: 1.4rem;
@@ -105,7 +108,7 @@ main{
             }
         }
     }
-    .seccion-tres{
+    .seccion-contact-us{
         h4{
             font-family: 'Montserrat', sans-serif;
             padding: 5rem;

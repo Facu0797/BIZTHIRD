@@ -1,0 +1,24 @@
+/* Servicios */
+
+        /* PANTALLA CELULAR */
+
+.container{
+
+    main{
+
+        .seccion-img{
+            
+            .img-servicios{
+                max-width: 100%;
+            }
+        }
+
+        .seccion-servicios{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            gap: 1rem;
+        }
+    }
+}

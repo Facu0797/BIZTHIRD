@@ -1,0 +1,47 @@
+/* Quienes Somos */
+
+        /* PANTALLA CELULAR */
+
+.container{
+
+    .header{
+        background-color: $color-secundario;
+
+        .titulo{
+            color: $color-primario;
+        }
+
+        .navbar{
+            .nav-ul{
+                .nav-li{
+                    .link{
+                        color: $color-primario;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+
+        .seccion-nosotros{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+            gap: 1rem;
+            
+            .nosotros-main{
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .seccion-img{
+        .img-about{
+            max-width: 100%
+        }       
+    }
+}

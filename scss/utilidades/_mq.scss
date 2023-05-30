@@ -11,19 +11,37 @@
         gap: 2rem;
         padding: 3rem;
         padding-bottom: 2rem;
+        background-color: $color-secundario;
+            
+            h1{
+                color: $color-primario;
+            }
+
+            nav{
+
+                ul{
+
+                    li{
+
+                        a{
+                            color: $color-primario;
+                        }
+                        
+                    }
+                }
+            }
         }
 
 
         main{
-            .perfil{
+            .seccion-home{
                 height: 600px;
-                margin: 1.5rem;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
                 padding: 1rem;
                 padding-top: 0;
-                .perfil-uno{
+                .a-template{
                     align-items: center;
                     justify-content: center;
                     text-align: center;
@@ -33,9 +51,9 @@
                         text-align:center;
                     }
                 }
-                .perfil-dos{
+                .botones-home{
                     padding-top: 2rem;
-                    .boton-perfil{
+                    .btn-home{
                         padding-inline: 3rem;
                         padding-block: 1rem;
                     }
@@ -43,20 +61,30 @@
             }
 
     
-            .seccion-uno{
+            .seccion-about{
                 .about{
                     text-align: center;
                 }
                 .about-p{
                     flex-direction: column ;
                     text-align: center;
+
+                    .parrafo{
+                        color: $color-secundario;
+                        font-family:'Times New Roman', Times, serif;
+                        font-size: 1.1rem;
+                    }
                 }
             }
 
     
-            .seccion-dos{
+            .seccion-services{
+                background-color: $color-secundario;
+                margin-top: 3rem;
+
                 h4{
                     text-align: center;
+                    color: $color-primario;
                 }
                 .servicios{
                     flex-direction: column;
@@ -64,6 +92,7 @@
                         p{
                             text-align: center;
                             font-size: 1.2rem;
+                            color: $color-primario;
                         }
                         .imagen{
                             width: 350px;

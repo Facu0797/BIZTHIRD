@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; }
 
 /* HEADER */
 .container {
@@ -23,9 +24,11 @@
         gap: 2rem; }
         .container header nav ul li {
           font-family: 'Montserrat', sans-serif; }
+          .container header nav ul li a {
+            text-decoration: none; }
 
 /* MAIN */
-main .perfil {
+main .seccion-home {
   height: 500px;
   background-image: url("../img/fondo-tres.jpg");
   background-position: top;
@@ -38,61 +41,154 @@ main .perfil {
   gap: 2rem;
   color: white;
   font-family: 'Montserrat', sans-serif; }
-  main .perfil .perfil-uno {
+  main .seccion-home .a-template {
     display: flex;
     flex-direction: column;
     align-items: end;
     gap: 2rem; }
-    main .perfil .perfil-uno h2 {
+    main .seccion-home .a-template h2 {
       font-size: 2.3rem; }
-  main .perfil .perfil-dos {
+  main .seccion-home .botones-home {
     display: flex;
     justify-content: end;
     gap: 5px; }
-    main .perfil .perfil-dos .boton-perfil {
+    main .seccion-home .botones-home .btn-home {
       background-color: black;
       padding: 0.5rem;
       padding-inline: 1rem;
       border-radius: 2rem; }
 
-main .seccion-uno .about {
+main .seccion-about .about {
   padding: 5rem;
   font-size: 1.4rem;
   font-family: 'Montserrat', sans-serif; }
 
-main .seccion-uno .about-p {
+main .seccion-about .about-p {
   display: flex;
   padding-inline: 5rem;
   gap: 2rem;
   text-align: left; }
 
-main .seccion-dos h4 {
+main .seccion-services h4 {
   padding: 5rem;
   font-size: 1.4rem;
   font-family: 'Montserrat', sans-serif; }
 
-main .seccion-dos .servicios {
+main .seccion-services .servicios {
   display: flex;
   padding: 4rem;
   padding-top: 0;
   gap: 2rem; }
-  main .seccion-dos .servicios .servicio {
+  main .seccion-services .servicios .servicio {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem; }
-    main .seccion-dos .servicios .servicio .imagen {
+    main .seccion-services .servicios .servicio .imagen {
       max-width: 100%;
       width: 250px;
       height: 180px; }
-    main .seccion-dos .servicios .servicio p {
+    main .seccion-services .servicios .servicio p {
       text-align: left; }
 
-main .seccion-tres h4 {
+main .seccion-contact-us h4 {
   font-family: 'Montserrat', sans-serif;
   padding: 5rem;
   font-size: 1.4rem; }
+
+/* Quienes Somos */
+/* PANTALLA CELULAR */
+.container .header {
+  background-color: black; }
+  .container .header .titulo {
+    color: white; }
+  .container .header .navbar .nav-ul .nav-li .link {
+    color: white; }
+
+.container main .seccion-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  gap: 1rem; }
+  .container main .seccion-nosotros .nosotros-main {
+    margin-top: 1rem; }
+
+.container .seccion-img .img-about {
+  max-width: 100%; }
+
+/* Servicios */
+/* PANTALLA CELULAR */
+.container main .seccion-img .img-servicios {
+  max-width: 100%; }
+
+.container main .seccion-servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem; }
+
+.container {
+  height: 100vh; }
+  .container .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    padding-bottom: 2rem;
+    background-color: black; }
+    .container .header .navbar {
+      display: flex;
+      align-items: center; }
+      .container .header .navbar .nav-ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none; }
+        .container .header .navbar .nav-ul .nav-li .link {
+          color: white;
+          text-decoration: none; }
+    .container .header .titulo {
+      color: white; }
+  .container .main-contacto {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../img/image-contacto.jpg"); }
+    .container .main-contacto .contacto {
+      padding: 3rem;
+      padding-top: 7rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 1rem; }
+      .container .main-contacto .contacto h2 {
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        border-radius: 0.5rem; }
+      .container .main-contacto .contacto h3 {
+        color: white;
+        background-color: black;
+        padding: 1rem;
+        border-radius: 0.5rem; }
+  .container .btn-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 4rem; }
+    .container .btn-contacto .btn {
+      background-color: black;
+      color: white;
+      padding: 1.5rem;
+      border-radius: 2rem;
+      padding-inline: 2rem;
+      box-shadow: 3px 3px 8px black; }
 
 /*** PANTALLA CELULAR ***/
 /* PERFIL */
@@ -103,40 +199,53 @@ main .seccion-tres h4 {
     align-items: center;
     gap: 2rem;
     padding: 3rem;
-    padding-bottom: 2rem; }
-  .container main .perfil {
+    padding-bottom: 2rem;
+    background-color: black; }
+    .container header h1 {
+      color: white; }
+    .container header nav ul li a {
+      color: white; }
+  .container main .seccion-home {
     height: 600px;
-    margin: 1.5rem;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 1rem;
     padding-top: 0; }
-    .container main .perfil .perfil-uno {
+    .container main .seccion-home .a-template {
       align-items: center;
       justify-content: center;
       text-align: center; }
-      .container main .perfil .perfil-uno p {
+      .container main .seccion-home .a-template p {
         font-size: 1.3rem;
         font-weight: bold;
         text-align: center; }
-    .container main .perfil .perfil-dos {
+    .container main .seccion-home .botones-home {
       padding-top: 2rem; }
-      .container main .perfil .perfil-dos .boton-perfil {
+      .container main .seccion-home .botones-home .btn-home {
         padding-inline: 3rem;
         padding-block: 1rem; }
-  .container main .seccion-uno .about {
+  .container main .seccion-about .about {
     text-align: center; }
-  .container main .seccion-uno .about-p {
+  .container main .seccion-about .about-p {
     flex-direction: column;
     text-align: center; }
-  .container main .seccion-dos h4 {
-    text-align: center; }
-  .container main .seccion-dos .servicios {
-    flex-direction: column; }
-    .container main .seccion-dos .servicios .servicio p {
+    .container main .seccion-about .about-p .parrafo {
+      color: black;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.1rem; }
+  .container main .seccion-services {
+    background-color: black;
+    margin-top: 3rem; }
+    .container main .seccion-services h4 {
       text-align: center;
-      font-size: 1.2rem; }
-    .container main .seccion-dos .servicios .servicio .imagen {
-      width: 350px;
-      height: 250px; } }
+      color: white; }
+    .container main .seccion-services .servicios {
+      flex-direction: column; }
+      .container main .seccion-services .servicios .servicio p {
+        text-align: center;
+        font-size: 1.2rem;
+        color: white; }
+      .container main .seccion-services .servicios .servicio .imagen {
+        width: 350px;
+        height: 250px; } }
